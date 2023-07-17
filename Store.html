@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plush website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="Img/pkmnLogo.png" alt="pkLogo" class="logo">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="">Legacy</a></li>
+                            <li><a href="">Season 2023</a></li>
+                            <li><a href="">Future releases</a></li>
+                        </ul>                
+                    </nav>
+                    <img src="Img/nav.png" class="menu-icon" 
+                    onclick="togglemenu()";>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>Shiny Gengar<br>(Champion)</h2>
+                    <h3>Champion of Galar</h3>
+                    <p>Large Size</p>
+                    <h4>$45.50</h4>
+                    <button type="button">Buy Now!<img src="Img/rightArrow.png" alt="arrowHere">
+                    </button>
+                </div>
+                <div class="col-2">
+                    <img src="Img/gengarPlush.png" alt="plush" class="plush">
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="Img/addBtn.png" alt="addbtn">
+                        <p><small>Add to Cart</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <img src="Img/fb.png" alt="fb">
+                <img src="Img/tw.png" alt="tw">
+                <img src="Img/ig.png" alt="ig">
+            </div>
+        </div>
+        
+        <script>
+       
+            var menuList = document.getElementById("menuList");
+            
+            menuList.style.maxHeight="0px";
+
+            function togglemenu(){
+                if(menuList.style.maxHeight=="0px"){
+                    menuList.style.maxHeight = "130px";
+                }
+                else{
+                    menuList.style.maxHeight="0px";
+                }               
+            }
+        </script>
+    </body>
+</html>
